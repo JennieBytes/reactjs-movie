@@ -4,7 +4,7 @@ import Detail from './routes/Detail';
 
 function App() {
 	return (
-		<BrowserRouter basename='process.env.PUBLIC_URL}'>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			{/* Routes allows us to render one route at a time */}
 			<Routes>
 				<Route path='/' element={<Home />}></Route>
